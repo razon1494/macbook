@@ -59,21 +59,21 @@ function totalPrice() {
     const memoryPrice = getInnerNumber('memory');
     const storagePrice = getInnerNumber('storage');
     const deliveryPrice = getInnerNumber('delivery');
-    document.getElementById('total-cost').innerText = basePrice + memoryPrice + storagePrice + deliveryPrice;
-    document.getElementById('final-total').innerText = basePrice + memoryPrice + storagePrice + deliveryPrice;
+    const total = basePrice + memoryPrice + storagePrice + deliveryPrice;
+    document.getElementById('total-cost').innerText = total;
+    document.getElementById('final-total').innerText = total;
 }
 
 //20% less for bonus
 document.getElementById('promo-btn').addEventListener('click', function() {
     const totalCost = getInnerNumber('total');
-    const inputField = document.getElementById('promo-code');
-    const inputValue = inputField.value;
+    const promoInputField = document.getElementById('promo-code');
+    const promoInputValue = promoInputField.value;
     //checking promocode
-    if (inputValue == 'stevekaku') {
+    if (promoInputValue == 'stevekaku') {
         const newFinalTotal = totalCost * 0.8;
         document.getElementById('final-total').innerText = newFinalTotal;
-
     }
     //clear input field
-    inputField.value = '';
+    promoInputField.value = '';
 })
