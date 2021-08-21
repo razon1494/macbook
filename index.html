@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Book</title>
-
     <!-- FAV ICON -->
     <link rel="shortcut icon" type="image/jpg" href="images/apple.png" />
     <!-- BOOTSTRAP CSS -->
@@ -24,86 +23,95 @@
                 </div>
                 <div class="col">
                     <!-- Some Heading & paragraph -->
-                    <h1>Customize Your Blue 24-inch iMac with Apple M1 Chip.</h1>
-                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 effeciency cores, 7-core GPU, And 16-core neural engine 8Gb unfiled memory 256GB SSD storage two thunderbolt / USB 4 ports Magic Mouse Magic Keyboard-US English.</p>
-                    <br>
-                    <!-- Options for users -->
-                    <h4>Memory</h4>
-                    <button id="basic-memory" type="button" class="btn btn-outline-dark">8GB unifiled Memory</button>
-                    <button id="upgraded-memory" type="button" class="btn btn-outline-dark">16GB unifiled Memory</button>
-                    <br><br>
-                    <h4>Storage</h4>
-                    <button id="storage-basic" type="button" class="btn btn-outline-dark">256GB SSD Storage</button>
-                    <button id="storage-mid" type="button" class="btn btn-outline-dark">512GB SSD Storage</button>
-                    <button id="storage-high" type="button" class="btn btn-outline-dark">1TB SSD Storage</button>
-                    <br><br>
-                    <h4>Choose Your Delivery Option</h4>
-                    <button id="free-delivery" type="button" class="btn btn-outline-dark">Friday, Aug 25 Free Prime Delivery</button>
-                    <button id="paying-delivery" type="button" class="btn btn-outline-dark">Friday Aug 21 Delivery Charge $20</button>
-                    <br><br>
-                    <!-- Invoice Table -->
-                    <table class="table table-hover">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h5>Base Price</h5>
-                                </td>
-                                <td>
-                                    <h5>$ <span id="base-cost">1299</span></h5>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5>Extra Memory Cost</h5>
-                                </td>
-                                <td>
-                                    <h5>$ <span id="memory-cost">0</span></h5>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5>Extra Storage Cost</h5>
-                                </td>
-                                <td>
-                                    <h5>$ <span id="storage-cost">0</h5></span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5>Delivery Charge</h5>
-                                </td>
-                                <td>
-                                    <h5>$ <span id="delivery-cost">0</span></h5>
-                                </td>
-                            </tr>
+                    <header>
+                        <h1>Customize Your Blue 24-inch iMac with Apple M1 Chip.</h1>
+                        <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 effeciency cores, 7-core GPU, And 16-core neural engine 8Gb unfiled memory 256GB SSD storage two thunderbolt / USB 4 ports Magic Mouse Magic Keyboard-US English.</p>
+                        <br>
+                    </header>
 
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>
-                                    <h4>Total Price</h4>
-                                </td>
-                                <td>
-                                    <h4>$ <span id="total-cost">1299</span></h4>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <br>
-                    <!-- Promo Code Section -->
-                    <h6>Add Promo Code</h6>
-                    <div class="input-group mb-3">
-                        <input id="promo-code" type="text" class="form-control" placeholder="Promo Code">
-                        <button class="btn btn-danger text-white btn-outline-secondary" type="button" id="promo-btn">Apply</button>
-                    </div>
+                    <main>
+                        <!--  Options for users -->
+                        <section class="options">
+                            <h4>Memory</h4>
+                            <button id="basic-memory" type="button" class="btn btn-outline-dark">8GB unifiled Memory</button>
+                            <button id="upgraded-memory" type="button" class="btn btn-outline-dark">16GB unifiled Memory</button>
+                            <br><br>
+                            <h4>Storage</h4>
+                            <button id="storage-basic" type="button" class="btn btn-outline-dark">256GB SSD Storage</button>
+                            <button id="storage-mid" type="button" class="btn btn-outline-dark">512GB SSD Storage</button>
+                            <button id="storage-high" type="button" class="btn btn-outline-dark">1TB SSD Storage</button>
+                            <br><br>
+                            <h4>Choose Your Delivery Option</h4>
+                            <button id="free-delivery" type="button" class="btn btn-outline-dark">Friday, Aug 25 Free Prime Delivery</button>
+                            <button id="paying-delivery" type="button" class="btn btn-outline-dark">Friday Aug 21 Delivery Charge $20</button>
+                            <br><br>
+                        </section>
+                        <!-- Invoice Table -->
+                        <section class="invoice-table">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h5>Base Price</h5>
+                                        </td>
+                                        <td>
+                                            <h5>$ <span id="base-cost">1299</span></h5>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Extra Memory Cost</h5>
+                                        </td>
+                                        <td>
+                                            <h5>$ <span id="memory-cost">0</span></h5>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Extra Storage Cost</h5>
+                                        </td>
+                                        <td>
+                                            <h5>$ <span id="storage-cost">0</h5></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Delivery Charge</h5>
+                                        </td>
+                                        <td>
+                                            <h5>$ <span id="delivery-cost">0</span></h5>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>
+                                            <h4>Total Price</h4>
+                                        </td>
+                                        <td>
+                                            <h4>$ <span id="total-cost">1299</span></h4>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <br>
+                        </section>
+                        <!-- Promo Code Section -->
+                        <h6>Add Promo Code</h6>
+                        <div class="input-group mb-3">
+                            <input id="promo-code" type="text" class="form-control" placeholder="Promo Code">
+                            <button class="btn btn-danger text-white btn-outline-secondary" type="button" id="promo-btn">Apply</button>
+                        </div>
                 </div>
             </div>
             <hr>
         </div>
-        <!-- final total -->
-        <h1 class="text-center fw-bolder">TOTAL: $ <span id="final-total">1299</span></h1>
-
-        <br><br><br><br>
-
+        </main>
+        <!-- final total (Footer) -->
+        <footer>
+            <h1 class="text-center fw-bolder">TOTAL: $ <span id="final-total">1299</span></h1>
+            <br><br>
+        </footer>
         <!-- BOOTSTRAP JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

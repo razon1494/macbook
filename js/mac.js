@@ -1,3 +1,27 @@
+//function for price update
+function updateCost(idName, price) {
+    const cost = document.getElementById(idName + '-cost');
+    cost.innerText = price;
+}
+
+//function for inner number
+function getInnerNumber(idName) {
+    const element = document.getElementById(idName + '-cost');
+    return parseInt(element.innerText);
+}
+
+//function for total price count
+function totalPrice() {
+    const basePrice = getInnerNumber('base');
+    const memoryPrice = getInnerNumber('memory');
+    const storagePrice = getInnerNumber('storage');
+    const deliveryPrice = getInnerNumber('delivery');
+    const total = basePrice + memoryPrice + storagePrice + deliveryPrice;
+    document.getElementById('total-cost').innerText = total;
+    document.getElementById('final-total').innerText = total;
+}
+
+
 //8 GB unifiled memory button click handler
 document.getElementById('basic-memory').addEventListener('click', function() {
     updateCost('memory', 0);
@@ -41,30 +65,8 @@ document.getElementById('paying-delivery').addEventListener('click', function() 
 })
 
 
-//function for price update
-function updateCost(idName, price) {
-    const cost = document.getElementById(idName + '-cost');
-    cost.innerText = price;
-}
 
-//function for inner number
-function getInnerNumber(idName) {
-    const element = document.getElementById(idName + '-cost');
-    return parseInt(element.innerText);
-}
-
-//function for total price count
-function totalPrice() {
-    const basePrice = getInnerNumber('base');
-    const memoryPrice = getInnerNumber('memory');
-    const storagePrice = getInnerNumber('storage');
-    const deliveryPrice = getInnerNumber('delivery');
-    const total = basePrice + memoryPrice + storagePrice + deliveryPrice;
-    document.getElementById('total-cost').innerText = total;
-    document.getElementById('final-total').innerText = total;
-}
-
-//20% less for bonus
+//20% less in promocode for bonus
 document.getElementById('promo-btn').addEventListener('click', function() {
     const totalCost = getInnerNumber('total');
     const promoInputField = document.getElementById('promo-code');
